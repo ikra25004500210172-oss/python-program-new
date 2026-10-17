@@ -1,0 +1,57 @@
+class Cat:
+    def sound(self):
+        print("Cat makes a meow sound.")
+
+class Dog:
+    def sound(self):
+        print("Dog makes a bark sound.")
+
+for animal in (Cat(), Dog()):
+    animal.sound()
+
+
+
+class Student:
+    def display(self):
+        print("Welcome to Python OOP.")
+
+s1 = Student()
+s1.display()
+
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+s1 = Student("Ayesha", 20)
+s1.display()
+
+
+class Parent:
+    def show(self):
+        print("This is the parent class.")
+
+class Child(Parent):
+    def display(self):
+        print("This is the child class.")
+
+obj = Child()
+obj.show()
+obj.display()
+
+
+class Student:
+    def __init__(self):
+        self.__marks = 85
+
+    def display(self):
+        print("Marks:", self.__marks)
+
+s1 = Student()
+s1.display()
+
